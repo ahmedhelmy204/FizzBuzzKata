@@ -6,12 +6,12 @@ class NumberFormatter {
 
         if(NumberExtensions.IsDivisibleBy(number,3))
         {
-            result = "Fizz";
+            result += "Fizz";
         }
 
         if(NumberExtensions.IsDivisibleBy(number,5))
         {
-            result = "Buzz";
+            result += "Buzz";
         }
 
         if(result == "") {

@@ -39,4 +39,15 @@ class FormatterFizzBuzzShould {
 
         assertEquals("Buzz", result);
     }
+
+    @ParameterizedTest
+    @ValueSource(ints = {15})
+    public void Return_FizzBuzz_Given_NumberDivisibleByThreeAndFive(int number)
+    {
+        var formatter = new NumberFormatter();
+
+        var result = formatter.FizzBuzz(number);
+
+        assertEquals("FizzBuzz", result);
+    }
 }
