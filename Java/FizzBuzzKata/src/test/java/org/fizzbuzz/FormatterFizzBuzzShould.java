@@ -31,7 +31,7 @@ class FormatterFizzBuzzShould {
 
     @ParameterizedTest
     @ValueSource(ints = {5, 10})
-    public void Return_Fizz_Given_NumberDivisibleByFive(int number)
+    public void Return_Buzz_Given_NumberDivisibleByFive(int number)
     {
         var formatter = new NumberFormatter();
 
