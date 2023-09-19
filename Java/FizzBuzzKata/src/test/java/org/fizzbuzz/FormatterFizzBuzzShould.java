@@ -28,4 +28,15 @@ class FormatterFizzBuzzShould {
 
         assertEquals("Fizz", result);
     }
+
+    @ParameterizedTest
+    @ValueSource(ints = {5, 10})
+    public void Return_Fizz_Given_NumberDivisibleByFive(int number)
+    {
+        var formatter = new NumberFormatter();
+
+        var result = formatter.FizzBuzz(number);
+
+        assertEquals("Buzz", result);
+    }
 }

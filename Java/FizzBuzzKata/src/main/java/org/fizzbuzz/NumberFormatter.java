@@ -9,6 +9,11 @@ class NumberFormatter {
             result = "Fizz";
         }
 
+        if(NumberExtensions.IsDivisibleBy(number,5))
+        {
+            result = "Buzz";
+        }
+
         if(result == "") {
             result = String.valueOf(number);
         }
